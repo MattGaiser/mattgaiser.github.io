@@ -47,7 +47,8 @@ class App extends React.Component {
             showModal: false,
             showRequestModal: false,
             substrings: ["can't", "won't", "don't"],
-            estimatedCost: 36.29
+            estimatedCost: 38.13,
+            costModal: false
 
         };
         this.onTextAreaChange = this.onTextAreaChange.bind(this);
@@ -57,9 +58,21 @@ class App extends React.Component {
         this.closeRequestModal = this.closeRequestModal.bind(this);
         this.showRequestApprovals = this.showRequestApprovals.bind(this);
         this.sendRequestModal = this.sendRequestModal.bind(this);
-
+        this.showCostModal = this.showCostModal.bind(this);
+        this.hideCostModal = this.hideCostModal.bind(this);
 
     }
+    showCostModal(){
+        this.setState({
+            costModal: true
+        })
+    }
+    hideCostModal(){
+        this.setState({
+            costModal: false
+        })
+    }
+
 
     showRequestApprovals(){
         this.setState({
@@ -179,8 +192,8 @@ class App extends React.Component {
                         <img className="logo" width="50px"
                                                              src="https://innisfil.ca/wp-content/uploads/2019/06/logo.svg"/>
                     </a>
-                    <div className="header-right">
-                        <Button className="active"
+                    <div className="header-right glex">
+                        <Button className="active glex"
                                 onClick={this.resetPage}
                         >Send Message</Button>
                     </div>
@@ -262,6 +275,10 @@ class App extends React.Component {
                                 <div className='col-4'>
                                     <span className=''>$CAD {this.state.estimatedCost.toFixed(2)}</span>
                                 </div>
+                                <Button className="active glex center-button"
+                                        onClick={this.showCostModal}
+                                        size={'sm'}
+                                >Cost Breakdown</Button>
 
                             </div>
 
@@ -335,6 +352,72 @@ class App extends React.Component {
                         </Button>
                         <Button variant="primary" onClick={this.sendRequestModal}>
                             Send Invite
+                        </Button>
+                    </Modal.Footer>
+                </Modal>
+                <Modal show={this.state.costModal} onHide={this.hideCostModal} animation={false}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Cost Breakdown of Message</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div>
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th>Sending Medium</th>
+                                    <th>Price Per Unit</th>
+                                    <th>Units</th>
+                                    <th>Total Price</th>
+                                </tr>
+                                <tr>
+                                    <td>Facebook</td>
+                                    <td>$0.00</td>
+                                    <td>2136</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td>Twitter</td>
+                                    <td>$0.00</td>
+                                    <td>940</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone Call</td>
+                                    <td>$0.04</td>
+                                    <td>438</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Text Message</td>
+                                    <td>$0.0025</td>
+                                    <td>742</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Free</td>
+                                    <td>6348</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Physical Letter</td>
+                                    <td>$1.25</td>
+                                    <td>15</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total:</td>
+                                    <td>$38.13</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div></Modal.Body>
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={this.hideCostModal}>
+                            Close
                         </Button>
                     </Modal.Footer>
                 </Modal>

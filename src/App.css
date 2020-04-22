@@ -111,7 +111,7 @@ textarea {
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: lightgray;
   padding: 20px 10px;
 }
 
@@ -156,11 +156,12 @@ width: 100px;
 }
 
 .btn-group button {
-  background-color: rgb(52,111,177);
+  background-color: rgb(192,0,0);
   color: white;
   padding: 10px 45px;
   cursor: pointer;
   float: left;
+  border: none;
 }
 
 .btn-group button:not(:last-child) {
@@ -174,7 +175,7 @@ width: 100px;
 }
 
 .btn-group button:hover {
-  background-color: rgb(52,111,177);
+  background-color: rgb(170,0,0);
 }
 .form-setup {
   width: 90%;
@@ -182,5 +183,30 @@ width: 100px;
   margin-left: 20px;
 }
 
+.glex {
+  background-color: rgb(192,0,0) !important;
+  border: none !important;
+}
+
+.center-button {
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 
 
