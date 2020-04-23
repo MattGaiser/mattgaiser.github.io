@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.419a10c3.chunk.css",
-    "main.js": "/static/js/main.ea2dd3a8.chunk.js",
-    "main.js.map": "/static/js/main.ea2dd3a8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cbcdbc53.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cbcdbc53.js.map",
-    "static/css/2.4fe7acbf.chunk.css": "/static/css/2.4fe7acbf.chunk.css",
-    "static/js/2.af4e0560.chunk.js": "/static/js/2.af4e0560.chunk.js",
-    "static/js/2.af4e0560.chunk.js.map": "/static/js/2.af4e0560.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.9bd5dbcb5ada2c9461390a46a600245a.js": "/precache-manifest.9bd5dbcb5ada2c9461390a46a600245a.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.4fe7acbf.chunk.css.map": "/static/css/2.4fe7acbf.chunk.css.map",
-    "static/css/main.419a10c3.chunk.css.map": "/static/css/main.419a10c3.chunk.css.map",
-    "static/js/2.af4e0560.chunk.js.LICENSE.txt": "/static/js/2.af4e0560.chunk.js.LICENSE.txt"
+    "main.css": "/onemessage/static/css/main.d9916a05.chunk.css",
+    "main.js": "/onemessage/static/js/main.0918234f.chunk.js",
+    "main.js.map": "/onemessage/static/js/main.0918234f.chunk.js.map",
+    "runtime-main.js": "/onemessage/static/js/runtime-main.e8ac8820.js",
+    "runtime-main.js.map": "/onemessage/static/js/runtime-main.e8ac8820.js.map",
+    "static/css/2.4fe7acbf.chunk.css": "/onemessage/static/css/2.4fe7acbf.chunk.css",
+    "static/js/2.95ed6083.chunk.js": "/onemessage/static/js/2.95ed6083.chunk.js",
+    "static/js/2.95ed6083.chunk.js.map": "/onemessage/static/js/2.95ed6083.chunk.js.map",
+    "index.html": "/onemessage/index.html",
+    "precache-manifest.32c82a555451ff7485ec7eb0ae7d8660.js": "/onemessage/precache-manifest.32c82a555451ff7485ec7eb0ae7d8660.js",
+    "service-worker.js": "/onemessage/service-worker.js",
+    "static/css/2.4fe7acbf.chunk.css.map": "/onemessage/static/css/2.4fe7acbf.chunk.css.map",
+    "static/css/main.d9916a05.chunk.css.map": "/onemessage/static/css/main.d9916a05.chunk.css.map",
+    "static/js/2.95ed6083.chunk.js.LICENSE.txt": "/onemessage/static/js/2.95ed6083.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cbcdbc53.js",
+    "static/js/runtime-main.e8ac8820.js",
     "static/css/2.4fe7acbf.chunk.css",
-    "static/js/2.af4e0560.chunk.js",
-    "static/css/main.419a10c3.chunk.css",
-    "static/js/main.ea2dd3a8.chunk.js"
+    "static/js/2.95ed6083.chunk.js",
+    "static/css/main.d9916a05.chunk.css",
+    "static/js/main.0918234f.chunk.js"
   ]
 }
