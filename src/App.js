@@ -411,6 +411,18 @@ class App extends React.Component {
                                     <td>Total:</td>
                                     <td>$38.13</td>
                                 </tr>
+                                <tr>
+                                    <td>Cost of personalized letter</td>
+                                    <td>$1.25</td>
+                                    <td>10,619</td>
+                                    <td>$13,273.75</td>
+                                </tr>
+                                <tr>
+                                    <td>Cost of bulk letter</td>
+                                    <td>$0.33</td>
+                                    <td>10,619</td>
+                                    <td>$3504.27</td>
+                                </tr>
                                 </tbody>
                             </table>
 
